@@ -9,7 +9,8 @@ from PIL import Image
 @st.cache_resource
 def load_model():
     # model = torch.hub.load('ultralytics/yolov5','custom',path="weights/best.pt")
-    model = torch.load('weights/YOLOv5-CBAM-TR-BiFPN.pt')
+    # model = torch.load('weights/YOLOv5-CBAM-TR-BiFPN.pt')
+    model = torch.load('weights/best.pt')
     return model
 
 demo_img = "palm-oil.png"
