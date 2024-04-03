@@ -13,7 +13,7 @@ def load_model():
 
 
     # model = torch.hub.load('ultralytics/yolov5', 'custom', path='weights/best.pt')  # local model
-    model = torch.hub.load('yolov5', 'custom', path='weights/best.pt', source='local')  # local repo
+    model = torch.hub.load('./yolov5', 'custom', path='weights/best.pt', source='local')  # local repo
     return model
 
 demo_img = "palm-oil.png"
