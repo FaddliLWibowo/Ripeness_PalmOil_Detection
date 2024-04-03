@@ -1,0 +1,17 @@
+yolov5
+opencv_python_headless
+streamlit
+numpy
+Pillow
+torch
+torchvision
+PyYAML
+tqdm
+matplotlib
+requests
+scipy
+tensorboard
+pandas
+seaborn
+streamlit-webrtc
+IPython
