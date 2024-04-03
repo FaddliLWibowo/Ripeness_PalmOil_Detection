@@ -8,7 +8,7 @@ from PIL import Image
 
 @st.cache_resource
 def load_model():
-    model = torch.hub.load('ultralytics/yolov5','custom',path="weights/YOLOv5-CBAM-TR-BiFPN.pt",force_reload=True)
+    model = torch.hub.load('ultralytics/yolov5','custom',path="weights/best.pt",force_reload=True)
     return model
 
 demo_img = "palm-oil.png"
@@ -135,7 +135,8 @@ if app_mode == 'Run on WebCam':
             if(stop):
                 break
             ret,frame = cam.read()
-            frame = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
+            # frame = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
+            frame = cv2.cvtColor(frame,cv2.COLOR_RGB2BGR)
             model = load_model()
             results = model(frame)
             length = len(results.xyxy[0])
