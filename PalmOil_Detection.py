@@ -13,9 +13,9 @@ def load_model():
     return model
 
 demo_img = "palm-oil.png"
-demo_video = "Fire_Video.mp4"
+demo_video = "PalmOil_Video.mp4"
 
-st.title('Fire Detection')
+st.title('Ripeness Palm Oil Detection')
 st.sidebar.title('App Mode')
 
 
@@ -28,9 +28,9 @@ if app_mode == 'About App':
     
     st.markdown("- <h5>Select the App Mode in the SideBar</h5>",unsafe_allow_html=True)
     st.image("Images/first_1.png")
-    st.markdown("- <h5>Upload the Image and Detect the Fires in Images</h5>",unsafe_allow_html=True)
+    st.markdown("- <h5>Upload the Image and Detect the Palm Oil in Images</h5>",unsafe_allow_html=True)
     st.image("Images/second_2.png")
-    st.markdown("- <h5>Upload the Video and Detect the fires in Videos</h5>",unsafe_allow_html=True)
+    st.markdown("- <h5>Upload the Video and Detect the Palm Oil in Videos</h5>",unsafe_allow_html=True)
     st.image("Images/third_3.png")
     st.markdown("- <h5>Live Detection</h5>",unsafe_allow_html=True)
     st.image("Images/fourth_4.png")
@@ -49,14 +49,12 @@ if app_mode == 'About App':
 - Streamlit
 - YoloV5
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://antrosafin.netlify.app)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/antro-safin-m)
-[![twitter](https://img.shields.io/badge/Github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AntroSafin)
+[![twitter](https://img.shields.io/badge/Github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FaddliLWibowo)
 """)
     
 
 if app_mode == 'Run on Image':
-    st.subheader("Detected Fire:")
+    st.subheader("Detected Palm Oil:")
     text = st.markdown("")
     
     st.sidebar.markdown("---")
@@ -81,7 +79,7 @@ if app_mode == 'Run on Image':
     st.image(output,use_column_width=True)
     
 if app_mode == 'Run on Video':
-    st.subheader("Detected Fire:")
+    st.subheader("Detected Palm Oil:")
     text = st.markdown("")
     
     st.sidebar.markdown("---")
@@ -118,7 +116,7 @@ if app_mode == 'Run on Video':
         stframe.image(output)
         
 if app_mode == 'Run on WebCam':
-    st.subheader("Detected Fire:")
+    st.subheader("Detected Palm Oil:")
     text = st.markdown("")
     
     st.sidebar.markdown("---")
