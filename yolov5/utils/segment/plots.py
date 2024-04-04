@@ -48,7 +48,7 @@ def plot_images_and_masks(images, targets, masks, paths=None, fname="images.jpg"
         mosaic = cv2.resize(mosaic, tuple(int(x * ns) for x in (w, h)))
 
     # Annotate
-    fs = int((h + w) * ns * 0.005)  # font size
+    fs = int((h + w) * ns * 0.001)  # font size
     annotator = Annotator(mosaic, line_width=round(fs / 10), font_size=fs, pil=True, example=names)
     for i in range(i + 1):
         x, y = int(w * (i // ns)), int(h * (i % ns))  # block origin
