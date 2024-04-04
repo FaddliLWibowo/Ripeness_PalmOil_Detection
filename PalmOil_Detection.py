@@ -129,7 +129,7 @@ if app_mode == 'Run on WebCam':
     st.sidebar.markdown("---")
     
     # cam = cv2.VideoCapture(0)
-    cap = cv2.VideoCapture(-1)
+    cam = cv2.VideoCapture(-1)
     if(run):
         while(True):
             if(stop):
