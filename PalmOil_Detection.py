@@ -27,13 +27,13 @@ if app_mode == 'About App':
     st.markdown("<h5>This is the Ripeness Palm Oil Detection App created with custom trained models using Improved YoloV5</h5>",unsafe_allow_html=True)
     
     st.markdown("- <h5>Select the App Mode in the SideBar</h5>",unsafe_allow_html=True)
-    st.image("Images/first_1.png")
+
     st.markdown("- <h5>Upload the Image and Detect the Palm Oil in Images</h5>",unsafe_allow_html=True)
-    st.image("Images/second_2.png")
+
     st.markdown("- <h5>Upload the Video and Detect the Palm Oil in Videos</h5>",unsafe_allow_html=True)
-    st.image("Images/third_3.png")
+
     st.markdown("- <h5>Live Detection</h5>",unsafe_allow_html=True)
-    st.image("Images/fourth_4.png")
+
     st.markdown("- <h5>Click Start to start the camera</h5>",unsafe_allow_html=True)
     st.markdown("- <h5>Click Stop to stop the camera</h5>",unsafe_allow_html=True)
     
