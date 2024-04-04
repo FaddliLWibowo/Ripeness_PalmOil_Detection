@@ -52,7 +52,7 @@ Start the server
 
 - 🚀[YoloV5](https://github.com/ultralytics/yolov5)
 
-- 👀[Demo](https://firedetection.streamlitapp.com)
+- 👀[Demo](https://ripenesspalmoildetection.streamlit.app/)
 
 - 📅[Dataset](https://universe.roboflow.com/binus/sawit-mnhfg/dataset/5)
 
