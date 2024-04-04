@@ -128,15 +128,16 @@ if app_mode == 'Run on WebCam':
     stop = st.sidebar.button("Stop")
     st.sidebar.markdown("---")
     
-    # cam = cv2.VideoCapture(0)
-    cam = cv2.VideoCapture(-1)
+    cam = cv2.VideoCapture(0)
     if(run):
         while(True):
             if(stop):
                 break
             ret,frame = cam.read()
+            if not ret:
+                st.write("Error: Failed to read frame from webcam.")
+                break
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            # frame = cv2.cvtColor(frame,cv2.COLOR_RGB2BGR)
             model = load_model()
             results = model(frame)
             length = len(results.xyxy[0])
